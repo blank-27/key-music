@@ -26,8 +26,8 @@ document.addEventListener("keydown", checkKeyPressed, false);
 function checkKeyPressed(e) {
 	if (e.keyCode === 65 ||e.keyCode === 83 || e.keyCode === 68 || e.keyCode === 70 || e.keyCode === 71 || e.keyCode === 72) {
     const audio = document.querySelector(`#key-${x[e.keyCode]}`)
-    audio.play();
     audio.currentTime = 0;  
+    audio.play();
     createBubble(x[e.keyCode]);
 	}
 }
